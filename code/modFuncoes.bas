@@ -30,7 +30,7 @@ Public Declare Sub Sleep Lib "kernel32" _
 
 Public Function pastaAtual() As String
     pastaAtual = CurDir & "\"
-    pastaAtual = "C:\Users\felipelima\google drive\Documents\Desenv\Visual Basic 6\FL\ProjetoChurros\"
+    'pastaAtual = "C:\Users\felipel ima\google drive\Documents\Desenv\Visual Basic 6\FL\ProjetoChurros\"
 End Function
 
 Public Function abrirConexaoADO(ByRef AdoVar, ByVal nomeServidor As String, _
@@ -42,7 +42,7 @@ Public Function abrirConexaoADO(ByRef AdoVar, ByVal nomeServidor As String, _
     AdoVar.Properties("Data Source").Value = nomeServidor
     AdoVar.Properties("Initial Catalog").Value = nomeBanco
     AdoVar.Properties("User ID").Value = "felipelima"
-    AdoVar.Properties("Password").Value = "fl"
+    AdoVar.Properties("Password").Value = "felipe"
     
     AdoVar.Open
     
