@@ -1,0 +1,5 @@
+Requirement:
+•	Windows 7 (or later)
+•	SQL Server 2008 R2 (or later)
+•	Virtual Serial Ports Emulator
+•	Emul2100 (Emulator Bematech 2100)
