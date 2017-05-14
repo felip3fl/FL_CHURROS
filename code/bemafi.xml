@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bematech>
+  <Sistema>
+    <Porta>COM1</Porta>
+    <BaudRate>9600</BaudRate>
+    <Path>C:\Sistemas\DMAC Caixa\</Path>
+    <Status>0</Status>
+    <Retorno>0</Retorno>
+    <StatusFuncao>0</StatusFuncao>
+    <ControlePorta>1</ControlePorta>
+    <ConfigRede>0</ConfigRede>
+    <NivelLog>0</NivelLog>
+    <ModoGaveta>0</ModoGaveta>
+    <CrLfVinculado>0</CrLfVinculado>
+    <CrLfGerencial>0</CrLfGerencial>
+    <TimeOutReducaoZ>99</TimeOutReducaoZ>
+    <TimeOutGerencialExtendido>40</TimeOutGerencialExtendido>
+    <Tentativas>200</Tentativas>
+    <WakMilisegundos>40</WakMilisegundos>
+    <TimeoutSegundos>20</TimeoutSegundos>
+    <VersaoAtoCotepe>1</VersaoAtoCotepe>
+  </Sistema>
+  <Fiscal>
+    <ProtocoloUnico>0</ProtocoloUnico>
+    <GerarRFD>0</GerarRFD>
+    <CAT52>0</CAT52>
+    <CupomMania>0</CupomMania>
+    <MinasLegal>0</MinasLegal>
+    <NotaLegal>0</NotaLegal>
+    <ParaibaLegal>0</ParaibaLegal>
+    <CupomAdicional>0</CupomAdicional>
+  </Fiscal>
+  <MFD>
+    <Impressora>1</Impressora>
+    <EmulMFD>0</EmulMFD>
+  </MFD>
+  <Aliquotas>
+    <Aliquota01 Valor="" Tipo=""/>
+    <Aliquota02 Valor="" Tipo=""/>
+    <Aliquota03 Valor="" Tipo=""/>
+    <Aliquota04 Valor="" Tipo=""/>
+    <Aliquota05 Valor="" Tipo=""/>
+    <Aliquota06 Valor="" Tipo=""/>
+    <Aliquota07 Valor="" Tipo=""/>
+    <Aliquota08 Valor="" Tipo=""/>
+    <Aliquota09 Valor="" Tipo=""/>
+    <Aliquota10 Valor="" Tipo=""/>
+    <Aliquota11 Valor="" Tipo=""/>
+    <Aliquota12 Valor="" Tipo=""/>
+    <Aliquota13 Valor="" Tipo=""/>
+    <Aliquota14 Valor="" Tipo=""/>
+    <Aliquota15 Valor="" Tipo=""/>
+    <Aliquota16 Valor="" Tipo=""/>
+  </Aliquotas>
+  <SoftwareHouse>
+    <COO></COO>
+    <NumeroAplicativo></NumeroAplicativo>
+    <CNPJ></CNPJ>
+    <IE></IE>
+    <IM></IM>
+    <RazaoSocial></RazaoSocial>
+    <NomeAplicativo></NomeAplicativo>
+    <Versao></Versao>
+    <Linha1></Linha1>
+    <Linha2></Linha2>
+    <IM_ECF></IM_ECF>
+    <UF></UF>
+  </SoftwareHouse>
+  <ChequeOpcional>
+    <Cidade></Cidade>
+    <Favorecido></Favorecido>
+  </ChequeOpcional>
+</bematech>
