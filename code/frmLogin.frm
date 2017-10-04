@@ -5,8 +5,8 @@ Begin VB.Form frmLogin
    BorderStyle     =   0  'None
    Caption         =   "Form1"
    ClientHeight    =   10440
-   ClientLeft      =   300
-   ClientTop       =   1035
+   ClientLeft      =   -780
+   ClientTop       =   2655
    ClientWidth     =   19995
    LinkTopic       =   "Form1"
    LockControls    =   -1  'True

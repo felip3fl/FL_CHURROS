@@ -1,8 +1,8 @@
 frmControle = 152, 90, 766, 629, CZ, 0, 0, 0, 0, C
 modAjusteTela = 55, 129, 510, 668, C
-modInicial = 55, 133, 920, 672, 
+modInicial = 153, 143, 1018, 682, CZ
 modVariaveis = 55, 129, 510, 668, 
-modFuncoes = 61, 121, 857, 660, 
+modFuncoes = 2793, 147, 3589, 686, CZ
 frmLogin = 349, 97, 963, 636, CZ, 0, 0, 0, 0, C
 frmMenuOpcao = 464, 132, 919, 671, , 0, 0, 0, 0, C
 frmFinalizaCompra = 318, 165, 970, 704, C, 0, 0, 0, 0, C
