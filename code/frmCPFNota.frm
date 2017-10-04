@@ -4,8 +4,8 @@ Begin VB.Form frmCPFNota
    BorderStyle     =   0  'None
    Caption         =   "CPFNota"
    ClientHeight    =   10155
-   ClientLeft      =   11235
-   ClientTop       =   705
+   ClientLeft      =   5175
+   ClientTop       =   540
    ClientWidth     =   5565
    LinkTopic       =   "Form1"
    LockControls    =   -1  'True
@@ -405,15 +405,25 @@ Dim MSGBotaoAciciona As String
 
 Private Sub cmdAdiciona_Click()
 
-    MSGBotaoCarregando Me, cmdAdiciona, "VALIDANDO"
+    On Error GoTo TrataErro
 
+    MSGBotaoCarregando Me, cmdAdiciona, "VALIDANDO"
+    Esperar 1
+    
     If adicionaCPF(txtCPF.Text) Then
         Form_Deactivate
         vendaAberta = True
         frmControle.statusVendaAberta
+        wNumeroCupom = pegarNumeroPedido
     Else
         limpaCampos
         campoValido lblMSGCPF, False
+    End If
+    
+TrataErro:
+    If Err.Number <> 0 Then
+        MsgBox "Falha ao adicionar CPF na nota", vbCritical, "Adicionar CPF"
+        Form_Deactivate
     End If
     
 End Sub

@@ -4,8 +4,8 @@ Begin VB.Form frmControle
    BackColor       =   &H0000008C&
    BorderStyle     =   0  'None
    ClientHeight    =   11115
-   ClientLeft      =   2520
-   ClientTop       =   855
+   ClientLeft      =   2535
+   ClientTop       =   3255
    ClientWidth     =   16005
    Icon            =   "inicio.frx":0000
    LinkTopic       =   "Form1"
@@ -673,14 +673,14 @@ Public Sub limpaVariavel(limpezaCompleta As Boolean)
 
     'If CupomStatus = True Then
         If vendaAberta = False Then
-            lblMsgCPF.Caption = "Nota Fiscal Paulista"
+            lblMSGCPF.Caption = "Nota Fiscal Paulista"
             lblCPF.Caption = MSGBotaoCPF
-            lblMsgCPF.ForeColor = CORFONTE
+            lblMSGCPF.ForeColor = CORFONTE
             lblCPF.Caption = MSGBotaoCPF
             lblCPF.ForeColor = CORFONTE
         'End If
     Else
-        lblMsgCPF.Caption = "Toque aqui para cancelar"
+        lblMSGCPF.Caption = "Toque aqui para cancelar"
         'lblMSGCPF.ForeColor = vbRed
         'lblCPF.Caption = "Toque aqui para reconectar"
         'lblCPF.ForeColor = vbRed
@@ -1008,7 +1008,7 @@ Public Sub statusVendaAberta()
     If vendaAberta Then
         cmdCarinho.Picture = LoadPicture(pastaAtual & ENDPASTAIMG & "btCarrinhoP")
         If lblCPF <> MSGBotaoCPF Then
-            lblMsgCPF.Caption = "Toque aqui para cancelar"
+            lblMSGCPF.Caption = "Toque aqui para cancelar"
         End If
     Else
         cmdCarinho.Picture = LoadPicture(pastaAtual & ENDPASTAIMG & "btCarrinhoN")

@@ -9,6 +9,7 @@ Begin VB.Form frmFuncoes
    ClientTop       =   1080
    ClientWidth     =   5655
    LinkTopic       =   "Form2"
+   LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   10080

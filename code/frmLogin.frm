@@ -1,18 +1,38 @@
 VERSION 5.00
 Begin VB.Form frmLogin 
    AutoRedraw      =   -1  'True
-   BackColor       =   &H000000FF&
+   BackColor       =   &H0000008C&
    BorderStyle     =   0  'None
    Caption         =   "Form1"
-   ClientHeight    =   10455
-   ClientLeft      =   -450
-   ClientTop       =   1365
+   ClientHeight    =   10440
+   ClientLeft      =   300
+   ClientTop       =   1035
    ClientWidth     =   19995
    LinkTopic       =   "Form1"
    LockControls    =   -1  'True
-   ScaleHeight     =   10455
+   Picture         =   "frmLogin.frx":0000
+   ScaleHeight     =   10440
    ScaleWidth      =   19995
    ShowInTaskbar   =   0   'False
+   Begin VB.Frame frmDivisao 
+      Appearance      =   0  'Flat
+      BackColor       =   &H80000005&
+      Caption         =   "Frame1"
+      ForeColor       =   &H80000008&
+      Height          =   8235
+      Left            =   6960
+      TabIndex        =   17
+      Top             =   570
+      Width           =   30
+      Begin VB.Image imgDivisao 
+         Appearance      =   0  'Flat
+         Height          =   8235
+         Left            =   0
+         Picture         =   "frmLogin.frx":179D
+         Top             =   0
+         Width           =   30
+      End
+   End
    Begin VB.Timer tmrAnima 
       Enabled         =   0   'False
       Interval        =   10
@@ -50,7 +70,7 @@ Begin VB.Form frmLogin
             Height          =   735
             Index           =   0
             Left            =   0
-            Picture         =   "frmLogin.frx":0000
+            Picture         =   "frmLogin.frx":1AC0
             Top             =   555
             Visible         =   0   'False
             Width           =   735
@@ -60,7 +80,7 @@ Begin VB.Form frmLogin
             Height          =   735
             Index           =   1
             Left            =   1400
-            Picture         =   "frmLogin.frx":09D6
+            Picture         =   "frmLogin.frx":2496
             Top             =   555
             Visible         =   0   'False
             Width           =   735
@@ -70,7 +90,7 @@ Begin VB.Form frmLogin
             Height          =   735
             Index           =   2
             Left            =   2800
-            Picture         =   "frmLogin.frx":13AC
+            Picture         =   "frmLogin.frx":2E6C
             Top             =   555
             Visible         =   0   'False
             Width           =   735
@@ -80,7 +100,7 @@ Begin VB.Form frmLogin
             Height          =   735
             Index           =   3
             Left            =   4200
-            Picture         =   "frmLogin.frx":1D82
+            Picture         =   "frmLogin.frx":3842
             Top             =   555
             Visible         =   0   'False
             Width           =   735
@@ -90,7 +110,7 @@ Begin VB.Form frmLogin
             Height          =   735
             Index           =   4
             Left            =   0
-            Picture         =   "frmLogin.frx":2758
+            Picture         =   "frmLogin.frx":4218
             Top             =   15
             Width           =   735
          End
@@ -99,7 +119,7 @@ Begin VB.Form frmLogin
             Height          =   735
             Index           =   5
             Left            =   1400
-            Picture         =   "frmLogin.frx":32AE
+            Picture         =   "frmLogin.frx":4D6E
             Top             =   15
             Width           =   735
          End
@@ -108,7 +128,7 @@ Begin VB.Form frmLogin
             Height          =   735
             Index           =   6
             Left            =   2800
-            Picture         =   "frmLogin.frx":3E04
+            Picture         =   "frmLogin.frx":58C4
             Top             =   15
             Width           =   735
          End
@@ -117,7 +137,7 @@ Begin VB.Form frmLogin
             Height          =   735
             Index           =   7
             Left            =   4200
-            Picture         =   "frmLogin.frx":495A
+            Picture         =   "frmLogin.frx":641A
             Top             =   15
             Width           =   735
          End
@@ -411,7 +431,7 @@ Begin VB.Form frmLogin
          Height          =   1500
          Index           =   0
          Left            =   0
-         Picture         =   "frmLogin.frx":54B0
+         Picture         =   "frmLogin.frx":6F70
          Top             =   0
          Width           =   1500
       End
@@ -439,22 +459,15 @@ Begin VB.Form frmLogin
    Begin VB.Image imgSombra 
       Height          =   915
       Left            =   14280
-      Picture         =   "frmLogin.frx":698C
+      Picture         =   "frmLogin.frx":844C
       Top             =   9330
       Width           =   30000
-   End
-   Begin VB.Image imgDivisao 
-      Height          =   10500
-      Left            =   6945
-      Picture         =   "frmLogin.frx":9133
-      Top             =   0
-      Width           =   45
    End
    Begin VB.Image cmdSair 
       Appearance      =   0  'Flat
       Height          =   1200
       Left            =   18990
-      Picture         =   "frmLogin.frx":987C
+      Picture         =   "frmLogin.frx":ABF3
       ToolTipText     =   "Sair do Sistema"
       Top             =   165
       Width           =   1200
@@ -629,8 +642,8 @@ Private Sub ajustaMenuComponentes()
     cmdSair.left = Screen.Width - cmdSair.Width
     cmdSair.Top = 0
     
-    centroFormulario imgDivisao
-    centroFormularioHeight imgDivisao
+    centroFormulario frmDivisao
+    centroFormularioHeight frmDivisao
     
 End Sub
 

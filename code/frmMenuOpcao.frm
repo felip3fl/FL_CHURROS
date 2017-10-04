@@ -5,13 +5,13 @@ Begin VB.Form frmMenuOpcao
    BackColor       =   &H0004047B&
    BorderStyle     =   0  'None
    Caption         =   "frmMenuOpcao"
-   ClientHeight    =   11130
+   ClientHeight    =   11115
    ClientLeft      =   11805
    ClientTop       =   480
    ClientWidth     =   5550
    LinkTopic       =   "Form2"
    LockControls    =   -1  'True
-   ScaleHeight     =   11130
+   ScaleHeight     =   11115
    ScaleWidth      =   5550
    ShowInTaskbar   =   0   'False
    Begin VB.Timer tmrAnimacao 
@@ -626,19 +626,23 @@ Private Sub cmdAdiciona_Click()
     Dim vendaValida As Boolean
     
     If vendaAberta = False Then
+        
         MSGBotaoCarregando Me, cmdAdiciona, "ABRINDO VENDA"
-        If CupomAbertura("") Then
+        Esperar 1
+        'If CupomAbertura("") Then
             vendaAberta = True
             frmControle.statusVendaAberta
-        End If
+            wNumeroCupom = pegarNumeroPedido
+        'End If
     End If
     
     MSGBotaoCarregando Me, cmdAdiciona, "ENVIANDO CUPOM"
+    Esperar 1
     
 '    Select Case complementoAdicional
 '    Case 0
-        CupomCriaItem RSProdTamanho("Descricao"), RSProdTamanho("Codigo"), "FF", _
-              QTDESelecionado, RSProdTamanho("PrecoVenda")
+       ' CupomCriaItem RSProdTamanho("Descricao"), RSProdTamanho("Codigo"), "FF", _
+           '   QTDESelecionado, RSProdTamanho("PrecoVenda")
         
         gravaVendaBD wNumeroCupom, "CF", obterItem, RSProdTamanho("Codigo"), _
              CStr(precoEspecial), QTDESelecionado, RSProdTamanho("PrecoVenda"), ""
@@ -683,6 +687,8 @@ Private Sub gravaVendaBD(notaFiscal As String, serie As String, _
                          codigoCardapio As String, QTDE As String, _
                          preco As String, subProduto As String)
                          
+    On Error GoTo TrataErro
+                         
     Dim sql As scriptSQL
                          
     sql.insert = "insert ItensVenda ("
@@ -708,6 +714,13 @@ Private Sub gravaVendaBD(notaFiscal As String, serie As String, _
     sql.insert = sql.insert & vbNewLine & "'" & subProduto & "')"
     
     Call insercaoSQL(sql)
+    
+    Exit Sub
+    
+TrataErro:
+    If Err.Number <> 0 Then
+        MsgBox "Falha ao grava a venda no banco de dados", vbCritical, "Grava Venda BD"
+    End If
     
 End Sub
 

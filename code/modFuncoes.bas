@@ -280,7 +280,6 @@ End Function
 
 Public Function adicionaCPF(CPF As String) As Boolean
     If ValidaCPF(CPF) Then
-        CupomAbertura CPF
         frmControle.adicionaCPF (CPF)
         adicionaCPF = True
     End If
@@ -431,4 +430,29 @@ Public Sub sairSistema()
     Else
         End
     End If
+End Sub
+
+ Public Function pegarNumeroPedido()
+ 
+    Dim sql As scriptSQL
+    Dim RSUsuario As New ADODB.Recordset
+    
+    sql.select = "SELECT max(ITV_NotaFiscal) + 1 as pedido "
+    sql.from = "FROM ItensVenda"
+'
+    comandoSQL RSUsuario, sql
+'
+    pegarNumeroPedido = RSUsuario("pedido")
+ 
+ End Function
+
+
+Sub Esperar(ByVal Tempo As Long)
+    
+    Dim StartTime As Long
+    StartTime = Timer
+    Do While Timer < StartTime + Tempo
+        DoEvents
+    Loop
+
 End Sub

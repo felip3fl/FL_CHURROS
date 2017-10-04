@@ -851,6 +851,7 @@ End Sub
 Private Sub cmdFinalizar_Click()
     
     MSGBotaoCarregando Me, cmdFinalizar, "FINALIZANDO"
+    Esperar 1
 
     CupomIniciaFechamento
     cupomTerminaFechamento ""
@@ -882,6 +883,7 @@ End Sub
 Private Sub cmdProximo_Click()
 
     MSGBotaoCarregando Me, cmdProximo, "RESETANDO PAGAMENTO"
+    Esperar 0.5
     desfazerPagamentoBD wNumeroCupom, "CF", glbCodigoLoja
     
     frmModalidade.Visible = True
