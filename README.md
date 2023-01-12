@@ -17,6 +17,8 @@
 </br>
 <img src="https://github.com/Felip3FL/Churros/blob/master/material/image/main.PNG?raw=true" width="100%">
 
+<BR>
+
 ## :hammer: Funcionalidades do projeto
 
 - `Funcionalidade 1`: Cardápio de produtos
