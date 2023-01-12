@@ -29,7 +29,7 @@
   
 ## 📁 Acesso ao projeto
 
-Todo código fonte se encontra na pasta **source**
+Todo código fonte se encontra na pasta **code**
 
 <BR>
   
