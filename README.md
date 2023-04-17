@@ -1,13 +1,15 @@
-<h1 align="center"> <img src="https://user-images.githubusercontent.com/20684484/212168629-795c6dd1-1205-4d20-b4b5-5c1b00ce1818.png" width="250px" align="center" ><BR><BR>CHURROS PROJECT<BR><BR></h1>
+<h3 align="center"> <img src="https://user-images.githubusercontent.com/20684484/212168629-795c6dd1-1205-4d20-b4b5-5c1b00ce1818.png" width="200px" align="center" ><BR><BR>CHURROS PROJECT<BR><BR>
+
+
+<img src="https://img.shields.io/badge/STATUS-FINALIZADO-red">
+<img src="https://img.shields.io/badge/PROJECT%20VERSION-1.0.0-red">
+
+</h3>
 
 ## 📃 Descrição do projeto
 
 <p align="justify">
  Projeto desenvolvido em VB6 com o proposito de atender telas touch screen
-</p>
-<p align="center">
-<img src="https://img.shields.io/badge/STATUS-FINALIZADO-green">
-<img src="https://img.shields.io/badge/PROJECT%20VERSION-1.0.0-blue">
 </p>
 
 <BR>
