@@ -1,4 +1,4 @@
-<h3 align="center"> <img src="https://user-images.githubusercontent.com/20684484/212168629-795c6dd1-1205-4d20-b4b5-5c1b00ce1818.png" width="200px" align="center" ><BR><BR>CHURROS PROJECT<BR><BR>
+<h3 align="center"> <img src="https://github.com/felip3fl/FL_CHURROS/blob/master/material/button/ico/food_dining_icon.fw.png?raw=true" width="200px" align="center" ><BR><BR>CHURROS PROJECT<BR><BR>
 
 
 <img src="https://img.shields.io/badge/STATUS-FINALIZADO-red">
