@@ -1,10 +1,10 @@
-<h3 align="center"> <img src="https://github.com/felip3fl/FL_CHURROS/blob/master/material/button/ico/food_dining_icon.fw.png?raw=true" width="200px" align="center" ><BR><BR>CHURROS PROJECT<BR><BR>
+<p align="center"> <img src="https://github.com/felip3fl/FL_CHURROS/blob/master/material/button/ico/food_dining_icon.fw.png?raw=true" width="200px" align="center" ><BR><BR>CHURROS PROJECT<BR><BR>
 
 
 <img src="https://img.shields.io/badge/STATUS-FINALIZADO-red">
 <img src="https://img.shields.io/badge/PROJECT%20VERSION-1.0.0-red">
 
-</h3>
+</p>
 
 <BR>
  
