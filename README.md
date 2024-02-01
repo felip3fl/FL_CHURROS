@@ -2,9 +2,8 @@
 <BR><BR>
 <img src="https://img.shields.io/badge/STATUS-FINALIZADO-b55a59">
 <img src="https://img.shields.io/badge/PROJECT%20VERSION-1.0.0-a13534">
- <BR>
+<BR><BR>
 </h3>
-
 
  
 ## 📃 Descrição do projeto
